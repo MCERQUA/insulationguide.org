@@ -1,0 +1,16 @@
+[build]
+  command = "pnpm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[notifications]]
+  event = "submission_created"
+  url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=insulationguide.org"
+  form = "quote"
+
+[[notifications]]
+  event = "submission_created"
+  url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=insulationguide.org"
+  form = "contact"
