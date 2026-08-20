@@ -2,35 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== DESIGN TOKENS ===== */
-/* Replace these values with client brand colors */
+/* ===== DESIGN TOKENS — insulationguide.org ===== */
+/* Barn-red + harvest-gold, neutral warm-taupe base. Simpler 2-color system (no third trust
+   hue) — deliberately distinct from every other fleet build this batch. */
 
 @layer base {
 :root {
-  --background: 240 10% 4%;          /* #0a0a0f */
-  --foreground: 214 32% 91%;          /* #e2e8f0 */
+  --background: 36 24% 95%;           /* #F6F1EA neutral warm taupe-white */
+  --foreground: 20 28% 13%;           /* #291D15 espresso-brown text */
 
-  --card: 222 47% 7%;                 /* #0d1117 */
-  --card-foreground: 214 32% 91%;     /* #e2e8f0 */
+  --card: 34 24% 91%;                 /* #EEE6DA */
+  --card-foreground: 20 28% 13%;
 
-  --primary: 217 91% 60%;             /* #3b82f6 — replace with brand */
-  --primary-foreground: 0 0% 100%;    /* #ffffff */
+  --primary: 6 68% 37%;               /* #9E2B1F barn-red */
+  --primary-dark: 6 68% 26%;          /* #6E1D15 */
+  --primary-foreground: 36 30% 97%;
 
-  --secondary: 215 20% 15%;           /* #1e293b */
-  --secondary-foreground: 214 32% 91%;
+  --secondary: 30 28% 84%;            /* #E4D9C8 warm tan */
+  --secondary-foreground: 20 28% 13%;
 
-  --accent: 190 95% 39%;              /* #06b6d4 — replace with brand */
-  --accent-foreground: 0 0% 100%;
+  --accent: 43 56% 47%;               /* #C99A2E harvest-gold */
+  --accent-dark: 40 55% 34%;          /* #96741F */
+  --accent-foreground: 20 28% 13%;
 
-  --muted: 215 20% 15%;               /* #1e293b */
-  --muted-foreground: 215 16% 62%;    /* #94a3b8 */
+  --muted: 32 26% 90%;                /* #ECE2D3 */
+  --muted-foreground: 24 14% 40%;     /* #776A5D */
 
-  --destructive: 0 84% 60%;           /* #ef4444 */
-  --destructive-foreground: 0 0% 100%;
+  --charcoal: 20 32% 10%;             /* #251A14 dark contrast band */
+  --charcoal-foreground: 36 32% 90%;  /* #EDE2D2 */
 
-  --border: 215 20% 15%;              /* #1e293b */
-  --input: 215 20% 15%;
-  --ring: 217 91% 60%;                /* same as primary */
+  --destructive: 6 62% 42%;           /* #A83B27 */
+  --destructive-foreground: 36 30% 97%;
+
+  --border: 30 24% 78%;               /* #D6C7B0 */
+  --input: 30 24% 78%;
+  --ring: 6 68% 37%;
 
   --radius: 0.75rem;
 }
