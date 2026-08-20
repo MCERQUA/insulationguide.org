@@ -55,6 +55,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 } /* close @layer base */
 
+/* Layered-material motif — subtle repeating horizontal bands, echoing insulation batting */
+.band-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: repeating-linear-gradient(
+    0deg,
+    currentColor 0px,
+    currentColor 1px,
+    transparent 1px,
+    transparent 12px
+  );
+}
+
 /* ===== ANIMATIONS ===== */
 
 @keyframes marquee {

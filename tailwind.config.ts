@@ -37,6 +37,12 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        primaryDark: "hsl(var(--primary-dark))",
+        accentDark: "hsl(var(--accent-dark))",
+        charcoal: {
+          DEFAULT: "hsl(var(--charcoal))",
+          foreground: "hsl(var(--charcoal-foreground))",
+        },
       },
       fontFamily: {
         heading: ["var(--font-heading)", "system-ui", "sans-serif"],
@@ -52,13 +58,18 @@ const config: Config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-50%)" },
         },
+        "draw-check": {
+          from: { strokeDashoffset: "24" },
+          to: { strokeDashoffset: "0" },
+        },
       },
       animation: {
         marquee: "marquee var(--marquee-speed, 30s) linear infinite",
+        "draw-check": "draw-check 0.4s ease-out forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 
 export default config;
