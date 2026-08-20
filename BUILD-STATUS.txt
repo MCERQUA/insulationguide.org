@@ -1,0 +1,96 @@
+INSULATIONGUIDE.ORG — BUILD STATUS
+Built: 2026-08-20
+Operator: Contractors Choice Agency
+Worker: josh-desk-4@mesh (worker-c)
+
+REAL-BUSINESS-NAME CHECK
+--------------------------
+Cleared cleanly via serper. "Insulation Guide" / insulationguide.org: no dedicated business or
+brand found under this exact name — results are entirely generic educational content
+(EnergyStar, EPA, GBA, Lowe's, insulation.org, and other companies' "insulation guide" blog
+posts). "Insulation guide" is a generic descriptive phrase. No collision.
+
+SCOPE-OVERLAP CHECK (per manager's instruction)
+--------------------------------------------------
+Live-probed and fetched insulationcertificate.com (HTTP 200) before committing to scope. It is a
+B2B contractor documentation/certificate-generation tool (project docs, warranty validation,
+liability record-keeping) — entirely distinct from this build's consumer-facing educational
+buyer's-guide angle. No duplication; cleared to proceed as scoped.
+
+ANGLE
+-----
+General consumer-facing insulation education/buyer's-guide hub — types of insulation, R-value
+basics, cost/ROI, DIY-vs-professional, choosing a material. Broader and earlier-funnel than
+sprayfoamscience.com (spray-foam-specific building science) or foammedic.com (post-install
+diagnosis), and distinct in kind from azinsulationremoval.com (AZ-specific Local Service lead-
+gen, currently HELD) — this is a national, entry-level, thought-leadership-style content hub
+funneling into CCA's real "Get Matched with a Vetted, Insured Insulation Contractor" service
+(same genuine-capability model as azinsulationremoval.com, not a marketplace hedge).
+
+BUILD SUMMARY
+-------------
+ROUTES: 12 top-level pages + 4 seeded blog posts = 16 pages, 20 generated static routes
+  (Home, Types of Insulation, Understanding R-Value, Insulation Cost & ROI, DIY vs. Professional
+   Installation, Get Matched, About, Contact, Blog index + 4 posts, Privacy, Terms, sitemap.xml,
+   robots.txt, 404)
+
+HOMEPAGE: 5 sections (hero, 4-pillar teaser grid, why-trust-this-guide, quick-answers strip,
+  final CTA) — hub/router pattern per research brief, light-touch education-first framing.
+
+PILLAR PAGES: Types of Insulation is the flagship (~2,990 words) — material-by-material honest
+  pros/cons for fiberglass, cellulose, spray foam (open/closed-cell), rigid foam, mineral wool,
+  plus a dedicated "Is Spray Foam Insulation Safe?" section addressing the industry's biggest
+  unaddressed trust gap (per competitor research — no reviewed competitor tackles this directly).
+  Understanding R-Value (~2,220 words), Insulation Cost & ROI (~2,385 words, highest CTA density
+  per conversion-patterns.md), DIY vs. Professional Installation (~2,524 words) round out the
+  set. CTA placement rules from research followed exactly: never above the fold, 1-2 CTAs per
+  page max, trust-concern content always followed by a CTA, DIY page's CTA placed after the
+  decision checklist (not mid-instructions).
+
+IMAGES: 9 real AI-generated (Gemini) images, 1.6MB total. RGB-scanned by the image fork before
+  finalizing — all 9 passed avgR > avgB on the first generation (no blue-cast issues at all this
+  build). Fork also manually reviewed for gibberish text/logos and caught + fixed one defect (a
+  fabricated red printed label on an insulation bag in the original og-default.jpg — regenerated
+  without props/packaging).
+
+STITCH COVERAGE: 3 real Stitch-generated screens (home, types-of-insulation,
+  insulation-cost-and-roi) — verified via ls .stitch-pages/*.html.
+
+PALETTE: warm earth tones only — barn-red #9E2B1F / harvest-gold #C99A2E / neutral warm
+  taupe-white #F6F1EA (base) / espresso-brown #251A14 (dark contrast band). Zero purple/pink/
+  blue/emoji. Simpler 2-color system (no dedicated third trust hue) — deliberately distinct
+  structurally from azinsulationremoval.com's 3-color system. First use of Fraunces + Inter this
+  batch (editorial serif heading, distinct from every prior build's font pairing).
+
+FORK DISCIPLINE: 3 hard-scoped forks (research; image generation + pillar pages ran
+  CONCURRENTLY with non-overlapping scopes — public/images/ vs. 4 named src/app/ route
+  directories). Zero concurrency incidents. Pillar-pages fork verified CTA placement rules
+  programmatically before reporting done and confirmed no hardcoded contact info anywhere.
+
+BUILD: pnpm run build GREEN, clean on first attempt (and again on final re-verification after
+  cleanup). Static export, next 15.3.9, react 19.2.0, pnpm-lock.yaml only. Branch: main.
+
+PNPM-WORKSPACE.YAML: correct from initial scaffold (packages: ["."], not packages: []).
+
+GATE: pre-deploy-content-check.sh → PASS (exit 0) on first run. Proactively raised one weak
+  scrim stop found in a Stitch reference file (.stitch-pages/types-of-insulation.html, a
+  decorative side-column image at 20% overlay, no text actually on it) to 55%, per the manager's
+  standing instruction tonight that scrim-decay has been the single most recurring gate issue —
+  fixed before it could become a problem, even though the gate itself passed both before and
+  after. Re-verified again at final commit.
+
+COLLISION-SAFETY VERIFICATION: grepped for any live hyperlink to azinsulationremoval.com (which
+  is currently HELD, not live) — zero matches, per instruction to mention it in text only where
+  relevant (Cost & ROI's removal-cost section describes the category generically, no link).
+  Grepped for fabricated CCA-specific stats (founding year, project counts, star ratings) —
+  zero matches.
+
+VISUAL QA: playwright-cli, desktop (1440x900 default) + mobile (390x844). Home and Types of
+  Insulation pages checked. Zero console errors on either page (one benign Next.js dev-mode LCP-
+  priority advisory on a multi-image card grid — not a functional issue, not gate-relevant, left
+  as-is consistent with how similar non-blocking dev warnings were handled on prior builds
+  tonight). Confirmed sticky mobile Call/Get Matched bar, no-CTA-above-the-fold on pillar pages,
+  honest pros/cons card formatting rendering correctly.
+
+NOT DONE (per instructions): no push to GitHub (MCERQUA/insulationguide.org), no Netlify
+  deploy — build + commit only, reporting to manager for host hand-off.
