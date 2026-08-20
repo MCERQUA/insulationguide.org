@@ -14,7 +14,6 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { StaggerChildren, StaggerItem } from "@/components/animations/StaggerChildren";
 
 export const metadata: Metadata = {
   title: "Insulation R-Value Explained: Chart, Climate Zones & How Much You Need",
