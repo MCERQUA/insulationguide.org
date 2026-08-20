@@ -43,6 +43,7 @@ const ROOM_COSTS = [
   { icon: Building2, name: "Walls (whole-house retrofit)", range: "$3,000 – $7,000", note: "Dense-pack blown-in through drilled access holes." },
   { icon: Warehouse, name: "Crawl Space", range: "$1,500 – $4,500", note: "Cost climbs with moisture control / encapsulation." },
   { icon: Boxes, name: "Basement", range: "$2,000 – $5,500", note: "Rigid foam or spray foam against foundation walls." },
+  { icon: Wrench, name: "Garage", range: "$1,000 – $3,000", note: "Usually the smallest and most approachable project by square footage." },
 ];
 
 const FAQS = [
@@ -102,6 +103,13 @@ export default function InsulationCostAndRoiPage() {
             material and by project, plus the ROI, the federal tax credit, and what actually moves
             your quote up or down.
           </p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            It&apos;s worth setting expectations before any numbers: two homes of the same square
+            footage can land on very different final costs depending on how much of the old
+            insulation has to come out, how easy the space is to reach, and which material best
+            fits the job. Treat every number on this page as a realistic starting range, not a
+            quote for your specific home.
+          </p>
         </FadeIn>
       </Section>
 
@@ -153,7 +161,10 @@ export default function InsulationCostAndRoiPage() {
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Typical project cost ranges for common home sizes. A full whole-house insulation
             project (new construction level, all areas) generally runs $6,000 to $16,000+
-            depending on materials chosen and home size.
+            depending on materials chosen and home size. A 1,000 sq ft attic top-up with blown-in
+            fiberglass or cellulose typically lands in the lower half of the attic range below,
+            while a full 2,000+ sq ft attic insulated from bare joists to a high R-value target
+            trends toward the upper end.
           </p>
         </FadeIn>
         <StaggerChildren className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -247,6 +258,13 @@ export default function InsulationCostAndRoiPage() {
                 A commonly cited realistic payback window for attic insulation upgrades is roughly
                 3 to 7 years, though this isn&apos;t a guarantee — treat any specific savings
                 estimate you receive as a projection based on assumptions, not a promise.
+              </p>
+              <p className="mt-4 text-charcoal-foreground/85 leading-relaxed">
+                Beyond the utility-bill math, better insulation also tends to even out temperature
+                swings between rooms and floors, reduce how hard your HVAC system has to run
+                (which can extend its lifespan), and is often noted as a value-add during a home
+                sale — though none of these secondary benefits should be treated as a guaranteed
+                dollar return.
               </p>
             </div>
           </FadeIn>
