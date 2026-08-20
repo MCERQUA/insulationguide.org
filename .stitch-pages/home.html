@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>InsulationGuide.org - Home Insulation Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Work+Sans:wght@400;500;600&amp;family=Public+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#9E2B1F',
+                        accent: '#C99A2E',
+                        background: '#F6F1EA',
+                        dark: '#251A14',
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-dark font-body min-h-screen flex flex-col antialiased">
+<!-- Navigation -->
+<header class="bg-[#F6F1EA] dark:bg-[#251A14] docked full-width top-0 border-b border-[#251A14]/10 dark:border-[#F6F1EA]/10 flat no shadows sticky z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-headline font-bold text-[#9E2B1F] dark:text-[#F6F1EA]" href="#">
+                InsulationGuide.org
+            </a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#251A14] dark:text-[#F6F1EA] font-medium hover:text-[#C99A2E] transition-colors duration-200" href="#">Insulation Types</a>
+<a class="text-[#251A14] dark:text-[#F6F1EA] font-medium hover:text-[#C99A2E] transition-colors duration-200" href="#">R-Value Guide</a>
+<a class="text-[#251A14] dark:text-[#F6F1EA] font-medium hover:text-[#C99A2E] transition-colors duration-200" href="#">Cost &amp; ROI</a>
+<a class="text-[#251A14] dark:text-[#F6F1EA] font-medium hover:text-[#C99A2E] transition-colors duration-200" href="#">DIY vs Pro</a>
+</nav>
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-background font-label font-medium rounded-DEFAULT scale-95 duration-150 ease-in-out hover:bg-primary/90 transition-all" href="#cta">
+                Find a Contractor
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-[#9E2B1F] dark:text-[#C99A2E]">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative h-[819px] min-h-[600px] flex items-center justify-center w-full overflow-hidden">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A brightly lit, spacious residential attic interior revealing newly installed, high-quality, pristine white and light pink fiberglass batt insulation neatly placed between wooden joists. Warm natural sunlight pours through a small vent or skylight, casting gentle shadows across the raw timber framing. The overall scene is clean, professional, and educational, embodying a modern, warm-toned aesthetic with a neutral, non-salesy atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAmEn_7wzktEyjFCTWa5l7afuxOR7In-i6NBF9s7rSMu5vm-YPXyVbCzMU6RdibzvHKfXyHsHBckuPWLeOeCz-98Ub-mxl4Bkp4-H46Dm6CswtoRZ5hlQNcml9AZJC5EZE8TDOUwmcrlIl-4mikMPKpl1am3OK0rdFeMgDz2eVuzeRC66iMN4hg5KAdXwmEmCOhvZ-vV-UnFBcSbKnI8av6bVa-b-TPokYvtXLoCScRXj3inGy4OOd7KSHpvk5ezMF2Y3ouBAHzhk')"></div>
+<!-- 55% Dark Scrim -->
+<div class="absolute inset-0 bg-dark/55"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="font-headline font-bold text-5xl md:text-6xl text-background mb-6 leading-tight">
+                    Your Honest, Start-Here Guide to Home Insulation
+                </h1>
+<p class="font-body text-xl text-background/90 mb-10 max-w-2xl mx-auto">
+                    What type, how much R-value, what it costs, and DIY or hire a pro.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary text-background font-label font-medium rounded-DEFAULT hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl" href="#guides">
+                        Explore the Guides
+                    </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-background text-background font-label font-medium rounded-DEFAULT hover:bg-background hover:text-dark transition-colors" href="#cta">
+                        Get Matched with a Vetted Contractor
+                    </a>
+</div>
+</div>
+</section>
+<!-- Where Do You Want to Start? (Bento Grid) -->
+<section class="py-24 px-6 bg-background" id="guides">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline font-bold text-4xl text-dark mb-4">Where Do You Want to Start?</h2>
+<div class="w-24 h-1 bg-accent mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<a class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-dark/5 flex flex-col h-full" href="#">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close-up professional photography of various insulation materials including spray foam, rigid foam board, and fiberglass batts laid out side-by-side on a clean, light wood workbench. The lighting is bright and analytical, highlighting the distinct textures of each material. The setting is a clean workshop, styled with warm earthy tones, reflecting an educational, neutral presentation without favoring any specific brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIeNfY4O9VWkDSKJQSNzvBW1R3ixmE3MXHuJUEwHHVLEqLoZ09mII9OqaDI1CGIlLY56C3JJSl61g7_xeLuVKZFScOOQHad1aIE_KBb18p8FNc0bubJs6-AOnanE8v_0srem9BdX2gszt6l9WUXtOjCDI4dF1UADwoc5gIC5K5DCAdaWLjqAJ2BGabd5TTXY5bCLA8IzG1S_1kGeTVlJTjsRAxEj-AUC8uYYnwPX1iP2pKSNVG7uicqsjO-vCgO884CQi2_gdqkag')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl" data-weight="fill">view_cozy</span>
+<h3 class="font-headline font-bold text-xl text-dark mb-2">Types of Insulation Explained</h3>
+<p class="font-body text-dark/70 text-sm flex-grow">Compare fiberglass, cellulose, spray foam, and rigid board to find what works best for your space.</p>
+<span class="text-accent font-label text-sm font-medium mt-4 flex items-center group-hover:translate-x-1 transition-transform">
+                                Read Guide <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-dark/5 flex flex-col h-full" href="#">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A stylized, clean infographic or conceptual photo showing a glowing warm home interior shielded from a cold exterior environment. A professional architectural blueprint lies in the foreground with a measuring tape and pencil. The lighting is crisp, emphasizing technical accuracy and thermal efficiency. The color palette heavily relies on warm taupe-whites and earthy reds, conveying an educational, trustworthy guide aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDg5-cDaB8pMQKKEInrzZT7ZVi8z9lU-aR-BAHbstAnK6Zm8k-eIj9w-jn_naItmJ56u_4S7STUbi_G3Bf1CwEsID1P0mI0md2_X_sNxEfO9Qzc5Sjia6mD2DR6nO-o3DartgfP4TRIMhWNLaj8CtorgZ3Qd4j1nrB3IHOJ4jzc9CsQ0k2m_fwHfohE3lL8jh3HxBze9PTJdH7jR4GJhMKhT_WK1HVc5aUEjPL8LDRBX0G3M_b8xf7IUXwu5VRKO55H5uyT_C8j1Fw')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl" data-weight="fill">thermostat</span>
+<h3 class="font-headline font-bold text-xl text-dark mb-2">Understanding R-Value</h3>
+<p class="font-body text-dark/70 text-sm flex-grow">Learn what R-value means and how much thermal resistance your specific climate zone requires.</p>
+<span class="text-accent font-label text-sm font-medium mt-4 flex items-center group-hover:translate-x-1 transition-transform">
+                                Read Guide <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-dark/5 flex flex-col h-full" href="#">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of a modern tablet displaying a detailed cost comparison chart or ROI calculator for home improvements, resting on a clean kitchen counter next to a cup of coffee. The screen glows softly in a warm, naturally lit domestic setting. The image uses a palette of warm earth tones, exuding financial prudence, transparency, and consumer empowerment without aggressive sales tactics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHDlxnFiVROESor6MH60uoqKmoZSmzvivbEhEzNZbN23moU9-1Yzeow9djfncGCXTYuwvxiGFnT3Nye-pKLGiIrEtdIjlDxrQGc1vcqBPYf2hyJ51XOP8qj99lGmkHd8okvEUx2vmQpPd7EhksKnyuTXgsyKjPW7CKHbtzrgVUnOGHOo8zxcoZS5-7tMorhnhbuJixHsw-kr83zfpdwSomRe9gs4QeTKRQpypDnGdg6b__ohbGkeGUAZ4gXjPyRpJTqNeZquinqFM')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl" data-weight="fill">payments</span>
+<h3 class="font-headline font-bold text-xl text-dark mb-2">Insulation Cost and ROI</h3>
+<p class="font-body text-dark/70 text-sm flex-grow">Break down material and labor costs, and see how quickly energy savings pay for the upgrade.</p>
+<span class="text-accent font-label text-sm font-medium mt-4 flex items-center group-hover:translate-x-1 transition-transform">
+                                Read Guide <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-dark/5 flex flex-col h-full" href="#">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A split composition image. On one side, a homeowner wearing safety goggles and a dust mask rolling out insulation. On the other side, a professional contractor in clean, branded gear spraying foam insulation. The environment is a well-lit residential attic space. The lighting is balanced and neutral, presenting a fair, objective comparison between DIY efforts and professional installation, sticking strictly to warm earthy tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDipyP0jFy7X5gHM57VJDKnXrTL7DFrteB1mdh88786RLCyWViRH0AutYnyxOLrKW8pJmGHHxSzxrNAcTVVvoNURVTSvb8s9ED12zYBf4lbQsAGTW-afXJHYOZvhUeH7pAyL3ImSlevSSmmW34g-LeToqvvf6kNgizPmxPhi_9nvbjez9Nwd12HtrH_BhShlOQoSR5HGsdOXfsU6IHY_GLvxk2tSysNbVqO2tzgxNznEhuhuvZLC9hK1JA7djuM-ijg7EwgEvF_hXc')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl" data-weight="fill">construction</span>
+<h3 class="font-headline font-bold text-xl text-dark mb-2">DIY vs Professional Installation</h3>
+<p class="font-body text-dark/70 text-sm flex-grow">Honest assessments of which projects you can tackle yourself and when to call the experts.</p>
+<span class="text-accent font-label text-sm font-medium mt-4 flex items-center group-hover:translate-x-1 transition-transform">
+                                Read Guide <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Why Trust This Guide -->
+<section class="py-20 px-6 bg-[#EBE4DA]">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-accent text-5xl mb-6" data-weight="fill">verified</span>
+<h2 class="font-headline font-bold text-3xl md:text-4xl text-dark mb-6">Why Trust This Guide</h2>
+<p class="font-body text-lg text-dark/80 mb-8 leading-relaxed">
+                    InsulationGuide.org is an independent resource backed by the Contractors Choice Agency. Our mission is to provide genuinely neutral, educational information to homeowners. We do not sell insulation materials, and we don't pitch specific brands. We provide the facts, comparison tables, and honest pros and cons so you can make an informed decision about your home's energy efficiency.
+                </p>
+<div class="inline-flex items-center space-x-2 text-primary font-medium">
+<span class="material-symbols-outlined text-sm">balance</span>
+<span>100% Objective &amp; Educational</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#251A14] dark:bg-[#1A120D] full-width text-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
+<div>
+<a class="font-headline font-bold text-xl text-[#F6F1EA] block mb-4" href="#">InsulationGuide.org</a>
+<p class="font-body text-sm text-[#F6F1EA]/80">© 2024 Contractors Choice Agency. All rights reserved. Professional insulation guides and resources.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-headline font-bold text-[#F6F1EA] mb-2 uppercase tracking-wider text-xs">Resources</h4>
+<a class="font-body text-[#F6F1EA]/80 hover:text-[#C99A2E] transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body text-[#F6F1EA]/80 hover:text-[#C99A2E] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body text-[#F6F1EA]/80 hover:text-[#C99A2E] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-headline font-bold text-[#F6F1EA] mb-2 uppercase tracking-wider text-xs">Agency</h4>
+<a class="font-body text-[#C99A2E] underline hover:text-[#C99A2E] transition-colors opacity-80 hover:opacity-100 flex items-center gap-2" href="tel:844-967-5247">
+<span class="material-symbols-outlined text-sm">call</span>
+                    844-967-5247
+                </a>
+<a class="font-body text-[#F6F1EA]/80 hover:text-[#C99A2E] transition-colors opacity-80 hover:opacity-100" href="#">Agency Branding</a>
+</div>
+</div>
+</footer>
+</body></html>
