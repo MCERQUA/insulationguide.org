@@ -146,7 +146,7 @@ export function LeadForm({ className }: { className?: string }) {
         </div>
         <div>
           <label htmlFor="zip" className="mb-1.5 block text-sm font-medium text-foreground">ZIP Code</label>
-          <input id="zip" name="zip" type="text" required autoComplete="postal-code" inputMode="numeric" pattern="\\d{5}(-\\d{4})?" maxLength={10} className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+          <input id="zip" name="zip" type="text" required autoComplete="postal-code" inputMode="numeric" pattern="\d{5}(-\d{4})?" maxLength={10} className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
         </div>
       </div>
 
